@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+</head>
+
+<body>
+    <div class="container">
+        <div class="text-center">
+            <div class="form-content">
+                <h1>New Product</h1>
+
+                <form action="/newproduct" method="post">
+                    <div class="filed input-filed">
+                        <input type="file" name="imgpro" />
+                    </div><br>
+                    <div class="filed input-filed">
+                        <input type="text" name="namepro" placeholder="Tên sản phẩm">
+                    </div><br>
+                    <div class="filed input-filed">
+                        <input type="number" name="pricepro" placeholder="Giá">
+                    </div><br>
+
+                    <div class="filed button-filed">
+                        <button>Thêm mới</button>
+                    </div><br>
+                     <div class="filed button-filed">
+                        <a class="btn btn-primary" href="/shop"> List</a>
+                    </div><br>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
