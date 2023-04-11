@@ -13,25 +13,25 @@
 </head>
 </head>
 
-<body>
+<body  style="background-color: rgb(43, 211, 233);">
     <div class="container">
         <div class="text-center">
             <div class="form-content">
                 <h1>New Product</h1>
-
-                <form action="/newproduct" method="post">
+                <input type="hidden" name="id" value="{{_id}}">
+                <form action="/newproduct" method="post" enctype="multipart/form-data">
                     <div class="filed input-filed">
-                        <input type="file" name="imgpro" />
+                        <input type="file" name="filename" style="margin-left: 400px;"/>
                     </div><br>
                     <div class="filed input-filed">
-                        <input type="text" name="namepro" placeholder="Tên sản phẩm">
+                        <input type="text" name="namepro" placeholder="Tên sản phẩm"  style="width: 400px;border-radius: 10px;padding: 10px;">
                     </div><br>
                     <div class="filed input-filed">
-                        <input type="number" name="pricepro" placeholder="Giá">
+                        <input type="number" name="pricepro" placeholder="Giá"  style="width: 400px;border-radius: 10px;padding: 10px;">
                     </div><br>
 
                     <div class="filed button-filed">
-                        <button>Thêm mới</button>
+                        <button style="width: 400px;border-radius: 10px;padding: 10px;background-color: blue;color: aliceblue;">Thêm mới</button>
                     </div><br>
                      <div class="filed button-filed">
                         <a class="btn btn-primary" href="/shop"> List</a>

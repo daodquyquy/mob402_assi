@@ -1,15 +1,7 @@
 const mongoose = require('mongoose')
 
-mongoose.connect("mongodb://127.0.0.1/assignment")
-    .then(() => {
-        console.log("mongodb connected")
-    })
-    .catch(() => {
-        console.log("fail to connect")
-    })
-
-const NewPro = new mongoose.Schema({
-    imgpro: {
+const NewProChema = new mongoose.Schema({
+    filename: {
         type: String,
         required: true
     },
@@ -24,6 +16,6 @@ const NewPro = new mongoose.Schema({
 
 })
 
-const newpro = new mongoose.model("product", NewPro)
+const newpro = new mongoose.model("product", NewProChema)
 
 module.exports = newpro

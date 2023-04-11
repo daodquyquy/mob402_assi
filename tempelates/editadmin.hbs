@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public//signup.css">
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+</head>
+
+<body style="background-color: rgb(43, 211, 233);">
+    <section class="container forms">
+        <div class="text-center">
+            <div class="form-content">
+                <h1>Update Admin</h1>
+                {{#each users}}
+                <form action="/editadmin" method="post"  enctype="multipart/form-data">
+                    <input type="hidden" name="id" value="{{this._id}}">
+                    <div class="filed input-filed">
+                        <input type="email" name="email" placeholder="Email" value="{{this.email}}"
+                            style="width: 400px;border-radius: 10px;padding: 10px;">
+                    </div><br>
+                    <div class="filed input-filed">
+                        <input type="password" name="password" placeholder="Password" value="{{this.password}}"
+                            style="width: 400px;border-radius: 10px;padding: 10px;">
+                    </div><br>
+                    <div class="filed input-filed">
+                        <input type="name" name="name" placeholder="Name" value="{{this.name}}"
+                            style="width: 400px;border-radius: 10px;padding: 10px;">
+                    </div><br>
+                    <div class="form-group text-center" style="margin-left: 380px;">
+                        <input type="file" name="filename" />
+                    </div><br>
+
+                    <div class="filed button-filed">
+                        <button
+                            style="width: 400px;border-radius: 10px;padding: 10px;background-color: blue;color: aliceblue;">Update</button>
+                    </div><br>
+                </form>
+                {{/each}}
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

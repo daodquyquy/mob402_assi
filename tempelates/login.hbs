@@ -11,18 +11,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body style="background-color: rgb(43, 211, 233);">
     <section class="container forms">
         <div class="text-center">
             <div class="form-content">
                 <h1>Login</h1>
 
                 <form action="/login" method="post">
-                    <div class="filed input-filed">
-                        <input type="email" name="email" placeholder="Email">
+                    <div class="filed input-filed" style="">
+                        <input type="email" name="email" placeholder="Email" style="width: 400px;border-radius: 10px;padding: 10px;">
                     </div><br>
                     <div class="filed input-filed">
-                        <input type="password" name="password" placeholder="Password">
+                        <input type="password" name="password" placeholder="Password" style="width: 400px;border-radius: 10px;padding: 10px;">
                     </div><br>
 
                     <div class="form-link">
@@ -30,12 +30,12 @@
                     </div><br>
 
                     <div class="filed button-filed">
-                        <button>Login</button>
+                        <button style="width: 400px;border-radius: 10px;padding: 10px;background-color: blue;color: aliceblue;">Login</button>
                     </div>
                     <br>
                     
                     <div class="form-link">
-                        <span>Already have an account ? <a href="/signup" class="signup-link">Sign Up</a> </span>
+                        <span>Already have an account ? <a href="/signup" class="signup-link" style="color: red;">Sign Up</a> </span>
                     </div>
                 </form>
 
